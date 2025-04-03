@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dove Caterers - Authentic Goan catering service for weddings, parties and events in Goa">
+    <title>Dove Caterers | Authentic Goan Catering Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <style>
+        :root {
+            --primary-color: #E27D60;
+            --secondary-color: #E8A87C;
+            --accent-color: #C38D9E;
+            --text-color: #2C3E50;
+        }
+        
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/goan-food.jpg');
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Dove Delights Logo">
+                <span>Dove Caterers</span>
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nest.html">Dove Nest</a></li>
+                    <li><a href="cater.html" class="active">Dove Caterers</a></li>
+                    <li><a href="#contact" class="btn-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Authentic Goan Cuisine</h1>
+            <p class="fade-in delay-1">Traditional flavors crafted with love</p>
+            <div class="hero-btns fade-in delay-2">
+                <a href="#order-now" class="btn btn-primary">Order Now</a>
+                <a href="#menu" class="btn btn-secondary">View Menu</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <section class="about-venture">
+        <div class="container">
+            <div class="section-header">
+                <h2>Dove Caterers</h2>
+                <p>Serving Goa's finest flavors since 2010</p>
+            </div>
+            <div class="venture-content">
+                <div class="venture-text slide-up">
+                    <h3>Our Culinary Story</h3>
+                    <p>Founded by master chef Maria Fernandes, Dove Caterers brings generations of Goan culinary tradition to your event. We specialize in:</p>
+                    <ul>
+                        <li><i class="fas fa-utensils"></i> Traditional Goan seafood dishes</li>
+                        <li><i class="fas fa-bread-slice"></i> Portuguese-inspired cuisine</li>
+                        <li><i class="fas fa-leaf"></i> Vegetarian Goan specialties</li>
+                        <li><i class="fas fa-cookie"></i> Authentic Goan desserts</li>
+                    </ul>
+                    <p>Using only the freshest local ingredients and traditional cooking methods, we create unforgettable dining experiences for weddings, corporate events, and private parties throughout Goa.</p>
+                </div>
+                <div class="venture-img slide-up delay-1">
+                    <img src="images/catering.jpg" alt="Dove Caterers Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <p>A taste of Goa's rich culinary heritage</p>
+            </div>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="all">All Items</button>
+                <button class="menu-tab" data-category="starters">Starters</button>
+                <button class="menu-tab" data-category="mains">Main Courses</button>
+                <button class="menu-tab" data-category="desserts">Desserts</button>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item slide-up" data-category="starters">
+                    <div class="menu-item-img" style="background-image: url('images/goan-food.jpg');"></div>
+                    <div class="menu-item-content">
+                        <h3>Chicken Cafreal</h3>
+                        <p>Succulent chicken marinated in a blend of green chilies, herbs and spices, then pan-fried to perfection.</p>
+                        <span class="price">₹350 per plate</span>
+                    </div>
+                </div>
+                <div class="menu-item slide-up delay-1" data-category="starters">
+                    <div class="menu-item-img" style="background-image: url('images/goan-food.jpg');"></div>
+                    <div class="menu-item-content">
+                        <h3>Prawn Balchão</h3>
+                        <p>Spicy, tangy prawns cooked in a traditional Goan pickle-style sauce with onions and vinegar.</p>
+                        <span class="price">₹400 per plate</span>
+                    </div>
+                </div>
+                <div class="menu-item slide-up delay-2" data-category="mains">
+                    <div class="menu-item-img" style="background-image: url('images/goan-food.jpg');"></div>
+                    <div class="menu-item-content">
+                        <h3>Fish Curry Rice</h3>
+                        <p>Goa's signature dish - fresh fish simmered in coconut milk with tamarind and spices, served with rice.</p>
+                        <span class="price">₹300 per plate</span>
+                    </div>
+                </div>
+                <div class="menu-item slide-up" data-category="mains">
+                    <div class="menu-item-img" style="background-image: url('images/goan-food.jpg');"></div>
+                    <div class="menu-item-content">
+                        <h3>Pork Vindaloo</h3>
+                        <p>Tender pork cooked in a fiery sauce of vinegar, garlic and Kashmiri chilies - a Goan classic.</p>
+                        <span class="price">₹380 per plate</span>
+                    </div>
+                </div>
+                <div class="menu-item slide-up delay-1" data-category="mains">
+                    <div class="menu-item-img" style="background-image: url('images/goan-food.jpg');"></div>
+                    <div class="menu-item-content">
+                        <h3>Vegetable Xacuti</h3>
+                        <p>Seasonal vegetables in a rich, aromatic gravy of roasted coconut and spices.</p>
+                        <span class="price">₹280 per plate</span>
+                    </div>
+                </div>
+                <div class="menu-item slide-up delay-2" data-category="desserts">
+                    <div class="menu-item-img" style="background-image: url('images/goan-food.jpg');"></div>
+                    <div class="menu-item-content">
+                        <h3>Bebinca</h3>
+                        <p>Traditional Goan layered cake made with coconut milk, eggs, and nutmeg.</p>
+                        <span class="price">₹150 per slice</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order-now" class="booking">
+        <div class="container">
+            <div class="section-header">
+                <h2>Order Catering</h2>
+                <p>Let us handle the food while you enjoy your event</p>
+            </div>
+            <div class="booking-content">
+                <div class="booking-info slide-up">
+                    <h3>Service Details</h3>
+                    <ul>
+                        <li><i class="fas fa-users"></i> Serving Size: 25 to 500+ guests</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Service Area: Throughout Goa</li>
+                        <li><i class="fas fa-utensils"></i> Service Options: Buffet, Plated, Food Stations</li>
+                        <li><i class="fas fa-concierge-bell"></i> Additional Services: Bartending, Serving Staff</li>
+                    </ul>
+                    <div class="pricing">
+                        <h4>Pricing</h4>
+                        <p>Starting at ₹500 per person</p>
+                        <p>Custom menus available for all budgets</p>
+                    </div>
+                </div>
+                <div class="booking-form slide-up delay-1">
+                    <h3>Get a Quote</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" placeholder="Event Date" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" placeholder="Number of Guests" min="25" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Service Type</option>
+                                <option value="buffet">Buffet</option>
+                                <option value="plated">Plated Service</option>
+                                <option value="stations">Food Stations</option>
+                                <option value="custom">Custom</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Special Requests/Allergies" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Request Quote</button>
+                    </form>
+                    <div class="whatsapp-cta">
+                        <p>Prefer to chat on WhatsApp?</p>
+                        <a href="https://wa.me/919822182917?text=Hi%20Dove%20Caterers,%20I'm%20interested%20in%20your%20catering%20services%20for%20an%20event." class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Message Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Dove Caterers</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info slide-up">
+                    <h3>Get In Touch</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+919822182917">+91 98221 82917</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:catering@dovedelights.com">catering@dovedelights.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Based in North Goa, serving all of Goa</li>
+                        <li><i class="fas fa-clock"></i> Inquiry hours: 8AM - 8PM daily</li>
+                    </ul>
+                </div>
+                <div class="map-container slide-up delay-1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30758.8403281525!2d73.8279695!3d15.4989085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc0e6895d0b9d%3A0x4a4e82a6b4f1a0a5!2sNorth%20Goa!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Dove Caterers</h4>
+                    <p>Authentic Goan catering service bringing traditional flavors to your special events.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="nest.html">Dove Nest</a></li>
+                        <li><a href="cater.html">Dove Caterers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+919822182917">+91 98221 82917</a></li>
+                        <li><a href="mailto:catering@dovedelights.com">catering@dovedelights.com</a></li>
+                        <li>North Goa, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dove Delights. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/form-handler.js"></script>
+</body>
+</html>
