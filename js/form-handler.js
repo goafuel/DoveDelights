@@ -2,13 +2,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     const bookingForm = document.getElementById('bookingForm');
     if (bookingForm) {
-        // Get or initialize booking number from localStorage
+        // Initialize booking number
         let bookingNumber = localStorage.getItem('bookingNumber') || 1000;
 
         bookingForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Increment booking number and save
+            // Increment booking number
             bookingNumber++;
             localStorage.setItem('bookingNumber', bookingNumber);
             
@@ -30,22 +30,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Create WhatsApp message with booking number
-            const message = `*New Booking Inquiry #${bookingNumber}*%0A%0A` +
+            // Create WhatsApp message
+            const message = `*New Booking #${bookingNumber}*%0A%0A` +
                            `*Name:* ${formData.name}%0A` +
                            `*Email:* ${formData.email}%0A` +
                            `*Phone:* ${formData.phone}%0A` +
                            `*Event Type:* ${formData.eventType}%0A` +
                            `*Event Date:* ${formData.eventDate}%0A` +
                            `*Guest Count:* ${formData.guestCount}%0A%0A` +
-                           `*Special Requirements:*%0A${formData.requirements ? formData.requirements.replace(/\n/g, '%0A') : 'None'}%0A%0A` +
-                           `*Additional Information:*%0A${formData.additionalInfo ? formData.additionalInfo.replace(/\n/g, '%0A') : 'None'}`;
+                           `*Requirements:*%0A${formData.requirements || 'None'}%0A%0A` +
+                           `*Additional Info:*%0A${formData.additionalInfo || 'None'}`;
             
+            // Open WhatsApp
             window.open(`https://wa.me/919822182917?text=${message}`, '_blank');
             
-            // Show confirmation with booking number
-            alert(`Booking request #${bookingNumber} submitted! We've opened WhatsApp for you to complete the process.`);
+            // Show confirmation
+            alert(`Booking #${bookingNumber} submitted! We'll contact you shortly.`);
             
+            // Reset form
             this.reset();
         });
     }
@@ -57,26 +59,28 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             
             const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value
+                name: this.querySelector('[type="text"]').value,
+                email: this.querySelector('[type="email"]').value,
+                subject: this.querySelector('[placeholder="Subject"]').value,
+                message: this.querySelector('textarea').value
             };
             
             // Validate form
-            if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+            if (!formData.name || !formData.email || !formData.message) {
                 alert('Please fill in all required fields');
                 return;
             }
             
-            // Create email body
+            // Create email
             const emailBody = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0A${formData.message}`;
+            const emailSubject = formData.subject || 'Inquiry from Website';
             
-            window.open(`mailto:info@dovenestgoa.com?subject=${encodeURIComponent(formData.subject)}&body=${emailBody}`);
+            window.open(`mailto:info@dovenestgoa.com?subject=${encodeURIComponent(emailSubject)}&body=${emailBody}`);
             
-            // Show success message
-            alert('Thank you for your message! We will get back to you soon.');
+            // Show confirmation
+            alert('Thank you for your message! We will respond soon.');
             
+            // Reset form
             this.reset();
         });
     }
