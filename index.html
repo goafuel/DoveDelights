@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dove Nest Farmhouse & Party Hall | Premium Venue</title>
-    <meta name="description" content="Beautiful farmhouse venue for weddings, parties and events in Goa">
+    <title>Book Your Event | Dove Nest Farmhouse</title>
+    <meta name="description" content="Book your event at Dove Nest Farmhouse & Party Hall in Goa">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,12 +25,12 @@
             
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="booking.html">Book Now</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="booking.html" class="active">Book Now</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </nav>
             
@@ -46,254 +46,108 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Your Perfect Event Venue</h1>
-            <p>Beautiful farmhouse setting for weddings, parties and special occasions</p>
-            <div class="hero-buttons">
-                <a href="booking.html" class="btn btn-primary">Book Now</a>
-                <a href="#gallery" class="btn btn-outline">View Gallery</a>
-            </div>
+    <!-- Booking Hero -->
+    <section class="booking-hero">
+        <div class="container">
+            <h1>Book Your Event</h1>
+            <p>Fill out the form below to check availability</p>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about-section">
+    <!-- Booking Form -->
+    <section class="booking-form-section">
         <div class="container">
-            <div class="section-header">
-                <h2>About Dove Nest</h2>
-                <p>Discover our beautiful venue</p>
-            </div>
-            
-            <div class="about-grid">
-                <div class="about-content">
-                    <h3>A Serene Getaway</h3>
-                    <p>Nestled in the picturesque landscapes of Goa, Dove Nest Farmhouse offers a perfect blend of rustic charm and modern amenities. Our venue is designed to host unforgettable weddings, parties, and corporate events.</p>
-                    
-                    <div class="features-grid">
-                        <div class="feature">
-                            <i class="fas fa-users"></i>
-                            <h4>150-200 Guests</h4>
-                            <p>Spacious venue for medium to large events</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-utensils"></i>
-                            <h4>Catering</h4>
-                            <p>Customizable menu options available</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-parking"></i>
-                            <h4>Ample Parking</h4>
-                            <p>Convenient parking for all guests</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h4>Prime Location</h4>
-                            <p>Easy access from major roads</p>
-                        </div>
+            <form id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                    
-                    <a href="https://maps.google.com/?q=Dove+Nest+Farmhouse+Goa" target="_blank" class="btn btn-outline">
-                        <i class="fas fa-map-marker-alt"></i> View Location
-                    </a>
-                </div>
-                
-                <div class="about-image">
-                    <img src="assets/images/about.jpg" alt="Dove Nest Farmhouse">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="section gallery-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Gallery</h2>
-                <p>Explore our beautiful venue</p>
-            </div>
-            
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="assets/images/gallery-1.jpg" alt="Venue View">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/images/gallery-2.jpg" alt="Wedding Setup">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/images/gallery-3.jpg" alt="Outdoor Area">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/images/gallery-4.jpg" alt="Party Hall">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/images/gallery-5.jpg" alt="Dining Area">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/images/gallery-6.jpg" alt="Event Setup">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="section services-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Everything you need for a perfect event</p>
-            </div>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="assets/icons/wedding.svg" alt="Wedding Icon">
-                    <h3>Weddings</h3>
-                    <p>Beautiful setting for your dream wedding with complete arrangements</p>
-                </div>
-                <div class="service-card">
-                    <img src="assets/icons/birthday.svg" alt="Birthday Icon">
-                    <h3>Birthday Parties</h3>
-                    <p>Celebrate your special day in style with customizable packages</p>
-                </div>
-                <div class="service-card">
-                    <img src="assets/icons/corporate.svg" alt="Corporate Icon">
-                    <h3>Corporate Events</h3>
-                    <p>Professional space for meetings, conferences and gatherings</p>
-                </div>
-                <div class="service-card">
-                    <img src="assets/icons/catering.svg" alt="Catering Icon">
-                    <h3>Catering Services</h3>
-                    <p>Delicious food options with customizable menus</p>
-                </div>
-                <div class="service-card">
-                    <img src="assets/icons/photography.svg" alt="Photography Icon">
-                    <h3>Photography</h3>
-                    <p>Professional photography services available</p>
-                </div>
-                <div class="service-card">
-                    <img src="assets/icons/entertainment.svg" alt="Entertainment Icon">
-                    <h3>Entertainment</h3>
-                    <p>DJ, live music and other entertainment options</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="section testimonials-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>What Our Clients Say</h2>
-                <p>Hear from our happy customers</p>
-            </div>
-            
-            <div class="testimonials-slider">
-                <div class="testimonial active">
-                    <div class="testimonial-content">
-                        <p>"Dove Nest made our wedding day absolutely magical! The venue was stunning, and the staff went above and beyond."</p>
-                        <div class="testimonial-author">
-                            <img src="assets/images/client-1.jpg" alt="Priya & Rohan">
-                            <div>
-                                <h4>Priya & Rohan</h4>
-                                <span>Wedding Couple</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contact Us</h2>
-                <p>Get in touch for bookings and inquiries</p>
-            </div>
-            
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Dove Nest Farmhouse, Goa, India</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>+91 9822182917</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>info@dovenestgoa.com</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h3>Hours</h3>
-                            <p>Monday - Sunday: 9AM - 9PM</p>
-                        </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
                 </div>
                 
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-type">Event Type *</label>
+                        <select id="event-type" name="event-type" required>
+                            <option value="">Select event type</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="birthday">Birthday Party</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="family">Family Gathering</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="event-date">Event Date *</label>
+                        <input type="date" id="event-date" name="event-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guest-count">Guest Count *</label>
+                        <select id="guest-count" name="guest-count" required>
+                            <option value="">Select guest count</option>
+                            <option value="50-100">50-100</option>
+                            <option value="100-150">100-150</option>
+                            <option value="150-200">150-200</option>
+                            <option value="200+">200+</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="requirements">Special Requirements</label>
+                    <textarea id="requirements" name="requirements" rows="4" placeholder="Catering, decorations, etc."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="additional-info">Additional Information</label>
+                    <textarea id="additional-info" name="additional-info" rows="4" placeholder="Any other details about your event"></textarea>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Submit Booking</button>
+                    <button type="reset" class="btn btn-outline">Reset Form</button>
+                </div>
+            </form>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- Booking Process -->
+    <section class="booking-process">
         <div class="container">
-            <h2>Ready to Book Your Event?</h2>
-            <p>Contact us today to check availability and discuss your requirements</p>
-            <div class="cta-buttons">
-                <a href="tel:+919822182917" class="btn btn-primary">
-                    <i class="fas fa-phone-alt"></i> Call Now
-                </a>
-                <a href="booking.html" class="btn btn-outline">Book Online</a>
+            <h2>Our Booking Process</h2>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Check Availability</h3>
+                    <p>We'll verify date availability for your event</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Contact You</h3>
+                    <p>Our team will call to discuss details</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Confirm Booking</h3>
+                    <p>Secure your date with a deposit</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Plan Event</h3>
+                    <p>We'll help plan all the details</p>
+                </div>
             </div>
         </div>
     </section>
@@ -319,11 +173,11 @@
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#services">Services</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#gallery">Gallery</a></li>
+                        <li><a href="index.html#services">Services</a></li>
                         <li><a href="booking.html">Bookings</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                 </div>
                 
@@ -353,14 +207,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Lightbox -->
-    <div class="lightbox">
-        <div class="lightbox-content">
-            <img src="" alt="Gallery Image" class="lightbox-image">
-            <button class="lightbox-close"><i class="fas fa-times"></i></button>
-        </div>
-    </div>
 
     <script src="js/main.js"></script>
     <script src="js/form-handler.js"></script>
