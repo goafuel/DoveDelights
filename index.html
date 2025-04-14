@@ -3,188 +3,625 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dove Delights - Premium farmhouse venue and authentic Goan catering services in Goa">
-    <title>Dove Delights | Premium Venue & Catering in Goa</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Dove Nest Farmhouse & Party Hall | Premium Venue in Goa</title>
+    <meta name="description" content="Dove Nest Farmhouse & Party Hall offers a beautiful venue for weddings, parties, and events in Goa. Book your dream event with us today.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="icon" href="images/logo.png" type="image/png">
+    <style>
+        /* Preloader */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f8f5f2;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .loader {
+            width: 48px;
+            height: 48px;
+            border: 3px solid #d4a762;
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+            box-sizing: border-box;
+            animation: rotation 1s linear infinite;
+        }
+        
+        .loader::after {
+            content: '';  
+            box-sizing: border-box;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            border: 3px solid;
+            border-color: #8b6b3d transparent;
+        }
+        
+        @keyframes rotation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
-<body class="index-page">
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Dove Delights Logo">
-                <span>Dove Delights</span>
+                <img src="assets/images/logo.png" alt="Dove Nest Logo" class="logo-img">
+                <span class="logo-text">Dove Nest</span>
             </a>
-            <nav class="nav">
+            <nav class="main-nav">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="nest.html">Dove Nest</a></li>
-                    <li><a href="cater.html">Dove Caterers</a></li>
-                    <li><a href="#contact" class="btn-contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h1 class="fade-in">Experience Goan Hospitality at Its Finest</h1>
-            <p class="fade-in delay-1">Two ventures, one unforgettable experience</p>
-            <div class="hero-btns fade-in delay-2">
-                <a href="nest.html" class="btn btn-primary">Explore Dove Nest</a>
-                <a href="cater.html" class="btn btn-secondary">Discover Catering</a>
-            </div>
-        </div>
-        <div class="hero-overlay"></div>
-    </section>
-
-    <section class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2>Welcome to Dove Delights</h2>
-                <p>Where dreams meet reality</p>
-            </div>
-            <div class="about-grid">
-                <div class="about-card slide-up">
-                    <div class="about-img" style="background-image: url('images/farmhouse.jpg');"></div>
-                    <h3>Dove Nest</h3>
-                    <p>A picturesque farmhouse and open-air hall venue perfect for weddings, parties, and corporate events.</p>
-                    <a href="nest.html" class="btn btn-outline">Learn More</a>
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('assets/images/hero-1.jpg');">
+                <div class="container">
+                    <h1 class="hero-title">Your Dream Event Starts Here</h1>
+                    <p class="hero-subtitle">Elegant farmhouse venue for weddings, parties, and special occasions</p>
+                    <a href="booking.html" class="btn btn-primary">Book Now</a>
                 </div>
-                <div class="about-card slide-up delay-1">
-                    <div class="about-img" style="background-image: url('images/catering.jpg');"></div>
-                    <h3>Dove Caterers</h3>
-                    <p>Authentic Goan cuisine crafted with traditional recipes and the freshest local ingredients.</p>
-                    <a href="cater.html" class="btn btn-outline">Explore Menu</a>
+            </div>
+            <div class="slide" style="background-image: url('assets/images/hero-2.jpg');">
+                <div class="container">
+                    <h1 class="hero-title">Unforgettable Moments</h1>
+                    <p class="hero-subtitle">Create lasting memories in our beautiful setting</p>
+                    <a href="booking.html" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('assets/images/hero-3.jpg');">
+                <div class="container">
+                    <h1 class="hero-title">Premium Event Space</h1>
+                    <p class="hero-subtitle">Perfectly designed for your special occasions</p>
+                    <a href="booking.html" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
         </div>
+        <div class="slider-controls">
+            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
     </section>
 
-    <section class="testimonials">
+    <!-- About Section -->
+    <section id="about" class="section about-section">
         <div class="container">
             <div class="section-header">
-                <h2>What Our Clients Say</h2>
+                <h2 class="section-title">About Dove Nest</h2>
+                <p class="section-subtitle">A serene getaway for your special occasions</p>
             </div>
-            <div class="testimonial-slider">
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Nestled in the beautiful landscapes of Goa, Dove Nest Farmhouse & Party Hall offers a perfect blend of rustic charm and modern amenities. Our venue is designed to host unforgettable weddings, parties, corporate events, and family gatherings.</p>
+                    <p>With spacious indoor and outdoor areas, lush greenery, and top-notch facilities, we provide everything you need to create magical moments that last a lifetime.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Capacity: 150-200 Guests</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Prime Location in Goa</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <span>Catering Options Available</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-parking"></i>
+                            <span>Ample Parking Space</span>
+                        </div>
+                    </div>
+                    <a href="https://maps.google.com/?q=Dove+Nest+Farmhouse+Goa" target="_blank" class="btn btn-outline">
+                        <i class="fas fa-map-marked-alt"></i> View Location
+                    </a>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/about-image.jpg" alt="Dove Nest Farmhouse" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">Explore our beautiful venue</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-1.jpg" alt="Dove Nest Venue" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-2.jpg" alt="Wedding at Dove Nest" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-3.jpg" alt="Outdoor Area" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-4.jpg" alt="Party Hall" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-5.jpg" alt="Dining Area" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-6.jpg" alt="Event Setup" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Everything you need for a perfect event</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3>Weddings</h3>
+                    <p>Beautiful setting for your dream wedding with complete arrangements and decorations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Birthday Parties</h3>
+                    <p>Celebrate your special day in style with our customizable party packages.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Corporate Events</h3>
+                    <p>Professional space for meetings, conferences, and corporate gatherings.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Catering Services</h3>
+                    <p>Delicious food options with customizable menus for all types of events.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-photo-video"></i>
+                    </div>
+                    <h3>Photography</h3>
+                    <p>Professional photography services to capture your special moments.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Entertainment</h3>
+                    <p>DJ, live music, and other entertainment options available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Hear from our happy customers</p>
+            </div>
+            <div class="testimonials-slider">
                 <div class="testimonial active">
-                    <p>"Dove Nest provided the perfect backdrop for our wedding. The open-air hall was magical at sunset!"</p>
-                    <div class="client">
-                        <span>- Priya & Raj, Mumbai</span>
+                    <div class="testimonial-content">
+                        <p>"Dove Nest made our wedding day absolutely magical! The venue was stunning, and the staff went above and beyond to make everything perfect."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/client-1.jpg" alt="Client">
+                            <div>
+                                <h4>Priya & Rohan</h4>
+                                <span>Wedding Couple</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="testimonial">
-                    <p>"The catering service was exceptional. Our guests couldn't stop talking about the authentic Goan flavors."</p>
-                    <div class="client">
-                        <span>- The Fernandes Family</span>
+                    <div class="testimonial-content">
+                        <p>"We hosted our company's annual party at Dove Nest, and it was a huge success. The space was perfect, and the catering was excellent."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/client-2.jpg" alt="Client">
+                            <div>
+                                <h4>Anil Sharma</h4>
+                                <span>Corporate Client</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="testimonial">
-                    <p>"We've hosted three corporate events at Dove Nest. The team's professionalism is unmatched."</p>
-                    <div class="client">
-                        <span>- TechSolutions India</span>
+                    <div class="testimonial-content">
+                        <p>"My daughter's birthday party at Dove Nest was unforgettable. The kids loved the space, and the staff helped with all the arrangements."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/client-3.jpg" alt="Client">
+                            <div>
+                                <h4>Neha Patel</h4>
+                                <span>Birthday Party</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="slider-controls">
-                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
-                <div class="slider-dots"></div>
-                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+            <div class="testimonial-controls">
+                <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
         <div class="container">
             <div class="section-header">
-                <h2>Get In Touch</h2>
-                <p>Have questions? We'd love to hear from you</p>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Get in touch for bookings and inquiries</p>
             </div>
-            <div class="contact-grid">
-                <div class="contact-info slide-up">
-                    <h3>Contact Information</h3>
-                    <ul>
-                        <li><i class="fas fa-phone"></i> <a href="tel:+919822182917">+91 98221 82917</a></li>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@dovedelights.com">info@dovedelights.com</a></li>
-                        <li><i class="fas fa-map-marker-alt"></i> North Goa, India</li>
-                    </ul>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Dove Nest Farmhouse, Beautiful Location, Goa, India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 9822182917</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@dovenestgoa.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Open Hours</h4>
+                            <p>Monday - Sunday: 9AM - 9PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Book Your Event?</h2>
+            <p>Contact us today to check availability and discuss your requirements</p>
+            <div class="cta-buttons">
+                <a href="tel:+919822182917" class="btn btn-primary">
+                    <i class="fas fa-phone-alt"></i> Call Now
+                </a>
+                <a href="booking.html" class="btn btn-outline-light">Book Online</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt="Dove Nest Logo" class="logo-img">
+                        <span class="logo-text">Dove Nest</span>
+                    </div>
+                    <p>Creating unforgettable moments in our beautiful farmhouse venue in Goa.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/919822182917"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <form class="contact-form slide-up delay-1">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" placeholder="Phone Number">
-                    </div>
-                    <div class="form-group">
-                        <select>
-                            <option value="">I'm interested in...</option>
-                            <option value="nest">Dove Nest Venue</option>
-                            <option value="catering">Dove Caterers</option>
-                            <option value="both">Both Services</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Dove Delights</h4>
-                    <p>Creating unforgettable experiences through exceptional venues and authentic Goan cuisine.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="nest.html">Dove Nest</a></li>
-                        <li><a href="cater.html">Dove Caterers</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="booking.html">Bookings</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Contact</h4>
+                <div class="footer-section">
+                    <h3>Services</h3>
                     <ul>
-                        <li><a href="tel:+919822182917">+91 98221 82917</a></li>
-                        <li><a href="mailto:info@dovedelights.com">info@dovedelights.com</a></li>
-                        <li>North Goa, India</li>
+                        <li><a href="#">Weddings</a></li>
+                        <li><a href="#">Birthday Parties</a></li>
+                        <li><a href="#">Corporate Events</a></li>
+                        <li><a href="#">Catering</a></li>
+                        <li><a href="#">Photography</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Dove Nest Farmhouse, Goa</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 9822182917</li>
+                        <li><i class="fas fa-envelope"></i> info@dovenestgoa.com</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Dove Delights. All Rights Reserved.</p>
-                <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
+                <p>&copy; 2023 Dove Nest Farmhouse & Party Hall. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <img src="" alt="Gallery Image" class="lightbox-image">
+            <button class="lightbox-close"><i class="fas fa-times"></i></button>
+            <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
-    <script src="js/form-handler.js"></script>
+    <script>
+        // Preloader
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            setTimeout(function() {
+                preloader.style.opacity = '0';
+                setTimeout(function() {
+                    preloader.style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mainNav = document.querySelector('.main-nav');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        });
+
+        // Hero slider
+        const heroSlider = document.querySelector('.hero-slider');
+        const slides = document.querySelectorAll('.hero-slider .slide');
+        const prevSlideBtn = document.querySelector('.prev-slide');
+        const nextSlideBtn = document.querySelector('.next-slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            let newIndex = (currentSlide + 1) % slides.length;
+            showSlide(newIndex);
+        }
+
+        function prevSlide() {
+            let newIndex = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(newIndex);
+        }
+
+        nextSlideBtn.addEventListener('click', nextSlide);
+        prevSlideBtn.addEventListener('click', prevSlide);
+
+        // Auto slide change
+        setInterval(nextSlide, 5000);
+
+        // Testimonial slider
+        const testimonials = document.querySelectorAll('.testimonial');
+        const testimonialDots = document.querySelectorAll('.testimonial-dots .dot');
+        const prevTestimonialBtn = document.querySelector('.prev-testimonial');
+        const nextTestimonialBtn = document.querySelector('.next-testimonial');
+        let currentTestimonial = 0;
+
+        function showTestimonial(index) {
+            testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+            testimonialDots.forEach(dot => dot.classList.remove('active'));
+            testimonials[index].classList.add('active');
+            testimonialDots[index].classList.add('active');
+            currentTestimonial = index;
+        }
+
+        function nextTestimonial() {
+            let newIndex = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(newIndex);
+        }
+
+        function prevTestimonial() {
+            let newIndex = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+            showTestimonial(newIndex);
+        }
+
+        nextTestimonialBtn.addEventListener('click', nextTestimonial);
+        prevTestimonialBtn.addEventListener('click', prevTestimonial);
+
+        // Dot navigation for testimonials
+        testimonialDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showTestimonial(index);
+            });
+        });
+
+        // Auto testimonial change
+        setInterval(nextTestimonial, 7000);
+
+        // Gallery lightbox
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.querySelector('.lightbox');
+        const lightboxImg = document.querySelector('.lightbox-image');
+        const lightboxClose = document.querySelector('.lightbox-close');
+        const lightboxPrev = document.querySelector('.lightbox-prev');
+        const lightboxNext = document.querySelector('.lightbox-next');
+        let currentImageIndex = 0;
+        const images = Array.from(galleryItems).map(item => item.querySelector('img').src);
+
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                currentImageIndex = index;
+                lightboxImg.src = images[currentImageIndex];
+                lightbox.classList.add('active');
+            });
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        lightboxPrev.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            lightboxImg.src = images[currentImageIndex];
+        });
+
+        lightboxNext.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            lightboxImg.src = images[currentImageIndex];
+        });
+
+        // Close lightbox when clicking outside image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+            }
+        });
+
+        // Keyboard navigation for lightbox
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.classList.contains('active')) {
+                if (e.key === 'Escape') {
+                    lightbox.classList.remove('active');
+                } else if (e.key === 'ArrowLeft') {
+                    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                    lightboxImg.src = images[currentImageIndex];
+                } else if (e.key === 'ArrowRight') {
+                    currentImageIndex = (currentImageIndex + 1) % images.length;
+                    lightboxImg.src = images[currentImageIndex];
+                }
+            }
+        });
+
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.section, .service-card, .gallery-item, .testimonial');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (elementPosition < screenPosition) {
+                    element.classList.add('animated');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        animateOnScroll(); // Run once on page load
+    </script>
 </body>
 </html>
